@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>TRAP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Oswald:wght@300&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="nav1">
+      <ul>
+        <li ><img src="UYULogo.png" class="UYULogo"></img></li>
+        <li ><a href="#ThisShouldGoToHomePage" class="Button">Home</a></li>
+        <li ><a href="#ThisShouldGoToGameDesignsPage" class="Button">Game Designs</a></li>
+        <li ><a href="#ThisShouldGoToOtherProjectsPage" class="Button">Other Projects</a></li>
+        <li ><a style="padding-right: 0vw;"href="#ThisShouldGoToAboutMePage" class="Button">About Me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="sidebar">
+    <a href="#top">Top</a>
+    <a href="#ThisShouldGoToSection1">Section1</a>
+    <a href="#ThisShouldGoToSection2">Section2</a>
+    <a href="#ThisShouldGoToSection3">Section3</a>
+    <a href="#ThisShouldGoToSection4">Section4</a>
+  </div>
+
+
+  </section>
+
+  <section id="Home" class="cover">
+
+    <div class="cover-content">
+
+      <h1 class="cover-title">
+        Trap
+      </h1>
+
+      <h2 class="cover-subtitle">
+        CIM383 Physical Computing Project 3
+      </h2>
+
+    </div>
+
+  </section>
+
+
+
+
+  <section class="Content">
+
+    <div>
+      <hr style="margin:auto;width:50%;height:2px;color:#463f3a">
+      <h2 class="subheader">Inspiration</h2>
+      <div class="imgRow3">
+        <div class="imgColumn3">
+          <img src="zen.png" alt="zen.png" style="width:100%">
+        </div>
+        <div class="imgColumn3">
+          <img src="trap.png" alt="trap.png" style="width:100%">
+        </div>
+        <div class="imgColumn3">
+          <img src="sig.png" alt="sig.png" style="width:100%">
+        </div>
+      </div>
+      <p class="imgNote"> Zenyata, The Trap, Sigma</p>
+      <div class="subcontent">
+        <p>In video game OVERWATCH, there are two character always floating in the air, Zenyata, a robot monk, and
+          Sigma, an insane gravity scientist. There is another character who can place a obviously mechanical, triggered
+          by step on it, trap. Do you think Zenyata and Sigma will be trapped?</p>
+
+        <img class="imgMxl" alt="designing 3D Model" src="trap out.gif">
+
+        <p>Leave out the game design and development stuff, which I know it is triggered by collide, simply based how it
+          looks like, I think the trap is not triggered by weight on it. Instead, it is triggered by detecting if there
+          is anything floating above it. We have resistors sensitive to how much light it received, so I had the idea of
+          making a trap and as tribute to the original Steel Trap of Junkrat from OVERWATCH.</p>
+
+
+        <hr style="margin:auto;width:50%;height:2px;color:#463f3a">
+
+
+        <p class="subheader">Measring and Modeling</p>
+        <p>While trying my best to recreate the trap, I need to take a lot of stuff into consideration: the length of
+          cable, the limits of 3d printer and capability of the motor. </p>
+        <img class="imgMxl" alt="designing 3D Model" src="onshape.png">
+        <p>Like always, the core part, where it holds motors and the resistors are 3d printed, the rest is made of card
+          board.</p>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <hr style="margin:auto;width:50%;height:2px;color:#463f3a">
+
+  <section class="Content">
+
+    <h1 class="subheader">Completed Product</h1>
+    <video controls class="vidPlayer">
+      <source src="vid.MP4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="imgNote"> Slow motion of the trap got triggered</p>
+    <img class="imgMxl" alt="designing 3D Model" src="cover.JPG">
+    <p class="imgNote"> The Trap Only</p>
+    <img class="imgMxl" alt="designing 3D Model" src="IMG_9446.JPG">
+    <p class="imgNote"> Trap and the cables and boards</p>
+
+  </section>
+
+  <section class="Content">
+
+    <h1 class="subheader">Issue and Solution</h1>
+    <h2 class="subsubheader">Issue : Not Enough Port</h2>
+    <p class="subcontent">
+      Originally I want to have 1 motor on the each side of the clamp, which makes up to 4 motors needed to be connected
+      to the board. However, I realized the port on the board is only enough for 3 motor at most. Not even mentioning I
+      need 1 set of ports for the light sensitive resistor.
+    </p>
+    <div class="imgRow2">
+      <div class="imgColumn2">
+        <img src="IMG_9442.JPG" alt="zen.png" style="width:100%">
+      </div>
+      <div class="imgColumn2">
+        <img src="IMG_9443.JPG" alt="trap.png" style="width:100%">
+      </div>
+    </div>
+    <h2 class="subsubheader">Solution : One motor for each side</h2>
+    <p class="subcontent">
+      Eventually, I used only one motor for each side of the clamp. The other side of the clamp is a 3d printed part.
+    </p>
+  </section>
+
+
+  <hr style="margin:auto;width:50%;height:2px;color:#463f3a">
+
+  <h1 class="subheader">Download</h1>
+  <section class="download">
+    <a href="code.py" download="Code">Code File</a>
+  </section>
+
+  <section class="Contact">
+    <table class="Table">
+      <thead>
+        <tr>
+          <th ><img src="UYULogo.png" class="UYULogo"></img></th>
+          <th > </th>
+          <th >Game Designs</th>
+          <th >Other Projects</th>
+          <th ></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td></td>
+          <td> </td>
+          <td><a href="#LinkToGDProject1" Class="Button">Timely Shot</a></td>
+          <td><a href="#LinkToPCC" Class="Button">Physical Computings</a></td>
+        </tr>
+
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td><a href="#LinkToGDProject2" Class="Button">Before the Rainstorm</a></td>
+          <td><a href="#LinkToVDC" Class="Button">Visual Designs</a></td>
+        </tr>
+
+        <tr>
+          <td>  yxz1655@miami.edu</td>
+          <td> </td>
+          <td><a href="#LinkToGDProject3" Class="Button">Duckrossing</a></td>
+          <td><a href="#LinkToESP" Class="Button">Esports Podcasts</a></td>
+        </tr>
+
+        <tr>
+          <td> zhylouis0606@gmail.com</td>
+          <td> </td>
+          <td></td>
+          <td><a href="#LinkToVID" Class="Button">Motion Pictures</a></td>
+        </tr>
+
+
+      </tbody>
+    </table>
+  </section>
+</body>
+
+</html>
